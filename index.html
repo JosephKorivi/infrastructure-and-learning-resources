@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,94 +8,240 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <div id="preloader">
         <img src="preload.jpg" alt="Loading..." width="200" height="200">
     </div>
     <div id="content" style="display: none;">
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a href="/"><img src="logo.jpeg" alt="logo" width="100" height="50"></a>
-            </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul>
-                <div class="btn">
-                    <button class="btn1"><a href="/signup.html">Sign Up</a></button>
-                    <button class="btn2"><a href="/login.html">Login</a></button>
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="/"><img src="logo.jpeg" alt="logo" width="100" height="50"></a>
                 </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="btn">
+                        <button class="btn1"><a href="/signup.html">Sign Up</a></button>
+                        <button class="btn2"><a href="/login.html">Login</a></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="first-section">
+                Infrastructure And Learning Resources
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="first-section">
-            Infrastructure And Learning Resources
-        </div>
-        <div class="left-section">
-            <div class="box-shape">
-                <a href="/">Admin Block
-                    <!-- <div class="categories">
+            <div class="left-section">
+                <div class="box-shape">
+                    <a href="/">Admin Block
+                        <!-- <div class="categories">
                         <p></p>
                         <p>Category 2</p>
                         <p>Category 3</p>
                     </div> -->
-                </a>
-            </div>
-            <div class="box-shape">
-                <a href="/">Classes
-                    <div class="categories">
-                        <p>Information Technology</p>
-                        <p>Computer Science and Engineering</p>
-                        <p>Electronics and Communication</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box-shape">
-                <a href="/">Labs
-                    <div class="categories">
-                        <p>Information Technology Laboratory</p>
-                        <!-- <p>Category 2</p>
+                    </a>
+                </div>
+                <div class="box-shape">
+                    <a href="/">Classes
+                        <div class="categories">
+                            <p>Information Technology</p>
+                            <div class="form-container">
+                                <h2>Room Details Form</h2>
+                                <form class="room-details-form">
+                                    <div class="form-group">
+                                        <label for="room-no">Room Number:</label>
+                                        <input type="text" id="room-no" name="room-no" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="blackboards">Number of Blackboards:</label>
+                                        <input type="number" id="blackboards" name="blackboards" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="benches">Number of Benches:</label>
+                                        <input type="number" id="benches" name="benches" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="acs">Number of Air Conditioners:</label>
+                                        <input type="number" id="acs" name="acs" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fans">Number of Fans:</label>
+                                        <input type="number" id="fans" name="fans" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lights">Number of Lights:</label>
+                                        <input type="number" id="lights" name="lights" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lan">LAN Availability:</label>
+                                        <select id="lan" name="lan">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projector">Projector Availability:</label>
+                                        <select id="projector" name="projector">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="other-necessities">Other Necessities:</label>
+                                        <textarea id="other-necessities" name="other-necessities" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                            <p>Computer Science and Engineering</p>
+                            <div class="form-container">
+                                <h2>Room Details Form</h2>
+                                <form class="room-details-form">
+                                    <div class="form-group">
+                                        <label for="room-no">Room Number:</label>
+                                        <input type="text" id="room-no" name="room-no" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="blackboards">Number of Blackboards:</label>
+                                        <input type="number" id="blackboards" name="blackboards" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="benches">Number of Benches:</label>
+                                        <input type="number" id="benches" name="benches" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="acs">Number of Air Conditioners:</label>
+                                        <input type="number" id="acs" name="acs" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fans">Number of Fans:</label>
+                                        <input type="number" id="fans" name="fans" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lights">Number of Lights:</label>
+                                        <input type="number" id="lights" name="lights" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lan">LAN Availability:</label>
+                                        <select id="lan" name="lan">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projector">Projector Availability:</label>
+                                        <select id="projector" name="projector">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="other-necessities">Other Necessities:</label>
+                                        <textarea id="other-necessities" name="other-necessities" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                            <p>Electronics and Communication</p>
+                            <div class="form-container">
+                                <h2>Room Details Form</h2>
+                                <form class="room-details-form">
+                                    <div class="form-group">
+                                        <label for="room-no">Room Number:</label>
+                                        <input type="text" id="room-no" name="room-no" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="blackboards">Number of Blackboards:</label>
+                                        <input type="number" id="blackboards" name="blackboards" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="benches">Number of Benches:</label>
+                                        <input type="number" id="benches" name="benches" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="acs">Number of Air Conditioners:</label>
+                                        <input type="number" id="acs" name="acs" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fans">Number of Fans:</label>
+                                        <input type="number" id="fans" name="fans" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lights">Number of Lights:</label>
+                                        <input type="number" id="lights" name="lights" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lan">LAN Availability:</label>
+                                        <select id="lan" name="lan">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projector">Projector Availability:</label>
+                                        <select id="projector" name="projector">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="other-necessities">Other Necessities:</label>
+                                        <textarea id="other-necessities" name="other-necessities" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shape">
+                    <a href="/">Labs
+                        <div class="categories">
+                            <p>Information Technology Laboratory</p>
+                            <!-- <p>Category 2</p>
                         <p>Category 3</p> -->
-                    </div>
-                </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shape">
+                    <a href="/">Seminar Halls
+                        <div class="categories">
+                            <p>New Block Seminar Hall</p>
+                            <p>Information Technology Seminar Hall</p>
+                            <!-- <p>Category 3</p> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shape">
+                    <a href="/">Staff Rooms
+                        <div class="categories">
+                            <p>Hod Cabin</p>
+                            <p>Prof</p>
+                            <p>Assist Prof</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-shape">
+                    <a href="/">Library
+                        <div class="categories">
+                            <p>Central Block Library</p>
+                            <p>IT Library</p>
+                            <!-- <p>Category 3</p> -->
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="box-shape">
-                <a href="/">Seminar Halls
-                    <div class="categories">
-                        <p>New Block Seminar Hall</p>
-                        <p>Information Technology Seminar Hall</p>
-                        <!-- <p>Category 3</p> -->
-                    </div>
-                </a>
+        </main>
+        <footer>
+            <div class="copy">
+                &copy; VVIT Infrastructure Details. All Rights Reserved
             </div>
-            <div class="box-shape">
-                <a href="/">Staff Rooms
-                    <div class="categories">
-                        <p>Hod Cabin</p>
-                        <p>Prof</p>
-                        <p>Assist Prof</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box-shape">
-                <a href="/">Library
-                    <div class="categories">
-                        <p>Central Block Library</p>
-                        <p>IT Library</p>
-                        <!-- <p>Category 3</p> -->
-                    </div>
-                </a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="copy">
-            &copy; VVIT Infrastructure Details. All Rights Reserved
-        </div>
-    </footer>
+        </footer>
 </body>
+
 </html>

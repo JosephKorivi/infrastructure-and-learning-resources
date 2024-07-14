@@ -91,6 +91,7 @@ nav {
     text-decoration: none;
     color: #fff;
 }
+
 .nav-right .btn button:hover {
     background-color: #a40303;
 }
@@ -118,6 +119,10 @@ main .left-section {
     width: 20%;
 }
 
+main .left-section .box-shape {
+    position: relative;
+}
+
 main .left-section .box-shape a {
     display: flex;
     padding: 10px;
@@ -135,33 +140,67 @@ main .left-section .box-shape a {
     position: relative; /* Added for positioning */
 }
 
-
 main .left-section .box-shape .categories {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 30%; /* Position below the parent */
-    left: 100%;
+    top: 0;
+    left: 100%; /* Position to the right of parent */
     background-color: #5c0000;
     color: #fff;
     border: 1px solid #000;
     border-radius: 40px;
-    width: 100%;
-    text-align: center;
+    width: 100%; /* Adjust width as needed */
+    height: auto;
+    padding: 10px; /* Adjust padding as needed */
     z-index: 1;
 }
 
-main .left-section .box-shape .categories p {
-    padding: 10px;
-    margin: 0;
-    font-size: 25px;
-    position: relative;
-    left: 0;
-}
-
-main .left-section .box-shape a:hover .categories {
+main .left-section .box-shape:hover .categories {
     display: block; /* Display on hover */
 }
 
+main .left-section .box-shape .categories p {
+    margin: 10px 0;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* form - container */
+
+button[type="submit"] {
+    background-color: #5c0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #a40303;
+}
+
+
+
+main .left-section .box-shape .categories .form-container {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: -100px; /* Position below the parent */
+    left: 700px; /* Adjust positioning */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #5c0000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 900px; /* Adjust width as needed */
+}
+
+main .left-section .box-shape .categories p:hover + .form-container,
+main .left-section .box-shape .categories .form-container:hover {
+    display: block; /* Display form on hover */
+}
 
 /* Style for the footer */
 footer {
@@ -176,201 +215,4 @@ footer {
 
 footer .copy {
     font-size: 16px;
-}
-
-
-/* Style for the signup form */
-.signup-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Adjust height as needed */
-}
-
-.signup-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-
-.signup-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.signup-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.signup-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.signup-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5c0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.signup-form button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.signup-form button:hover {
-    background-color: #a40303;
-}
-
-
-/* Style for the login form */
-.login-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Adjust height as needed */
-}
-
-.login-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-
-.login-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.login-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5c0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-form button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.login-form button:hover {
-    background-color: #a40303;
-}
-
-
-/* about.html */
-
-main .about-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-main .about-section h1,
-main .about-section h2 {
-    color: #5c0000;
-    margin-bottom: 20px;
-}
-
-main .about-section p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-main .about-section ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-main .about-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Contact Us Page */
-
-main .contact-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-main .contact-section h1 {
-    color: #5c0000;
-    margin-bottom: 20px;
-}
-
-main .contact-section p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-main .contact-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-main .contact-section form label {
-    margin-bottom: 5px;
-    color: #333;
-}
-
-main .contact-section form input,
-main .contact-section form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-main .contact-section form button {
-    background-color: #5c0000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    align-self: flex-start;
-}
-
-main .contact-section form button:hover {
-    background-color: #a40303;
 }
